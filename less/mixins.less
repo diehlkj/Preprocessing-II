@@ -1,7 +1,7 @@
 // Mixins in here
 
-.debug {
-    border: 1px solid red;
+.debug(@color) {
+    border: 1px solid @color;
 }
 .border-top {
     border-top: 2px dashed @navigation-border;
@@ -20,6 +20,13 @@
     font-size: 20px;
 }
 
+// .flex(@direction, @wrap, @justify, @align) {
+// 	display: flex;
+// 	flex-direction: @direction;
+// 	flex-wrap: @wrap;
+// 	justify-content: @justify;
+// 	align-items: @align;
+// }
 //Fonts
 .roboto {
     font-family: 'Roboto', sans-serif;

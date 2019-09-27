@@ -11,17 +11,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      
+      @media @mobile {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        order: 1;
+      }
 
       img {
         border-radius: 10px;
@@ -48,6 +57,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -59,11 +72,25 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @tablet {
+        width: 75%;
+      }
+
+      @media @mobile {
+        width: 90%;
+      }
+
       .btn {
-        .button(100%, 10px 0, teal, @white, 10px);
+        .button(100%, 10px 0, rgb(18, 183, 212), @white, 10px);
       }
     }
   }
