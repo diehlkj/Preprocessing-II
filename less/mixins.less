@@ -1,1 +1,36 @@
 // Mixins in here
+
+.debug(@color) {
+    border: 1px solid @color;
+}
+.border-top {
+    border-top: 2px dashed @navigation-border;
+}
+.border-bottom {
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.button(@width, @pad, @bkg, @color, @rad) {
+    width: @width;
+    padding: @pad;
+    background: @bkg;
+    color: @color;
+    border-radius: @rad;
+    text-align: center;
+    font-size: 20px;
+}
+
+// .flex(@direction, @wrap, @justify, @align) {
+// 	display: flex;
+// 	flex-direction: @direction;
+// 	flex-wrap: @wrap;
+// 	justify-content: @justify;
+// 	align-items: @align;
+// }
+//Fonts
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.indie {
+  font-family: 'Indie Flower', cursive;
+}
