@@ -1,1 +1,40 @@
 // Navigation Styles here
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: @white;
+    .border-bottom();
+    
+    div {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        max-width: 800px;
+        padding: 15px 0;
+
+        a {
+            margin-left: 30px;
+            .roboto();
+            font-size: 15px;
+            text-decoration: none;
+            color: @font-color;
+
+            &:hover {
+                color: @eastern-blue;
+            }
+        }
+
+        #logo {
+            .indie();
+            font-size: 40px;
+            margin: 0 auto 0 0;
+            
+            &:hover {
+                color: @font-color;
+            }
+        }
+    }
+}

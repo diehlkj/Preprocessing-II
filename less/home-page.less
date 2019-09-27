@@ -1,5 +1,11 @@
 .home {
 
+  .header {
+    img {
+      margin-bottom: 20px;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -25,7 +31,7 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    .border-bottom();
 
     .text-content {
       padding-left: 1%;
@@ -49,13 +55,16 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    .border-top();
     display: flex;
     justify-content: space-between;
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn {
+        .button(100%, 10px 0, teal, @white, 10px);
+      }
     }
   }
 }// home
